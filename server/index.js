@@ -17,7 +17,7 @@ mongoose.connect(MONGO_URL)
     .catch((err) => console.error("MongoDB connection failed:", err));
 
 app.use(cors({
-    origin: ["http://localhost:5173"],
+    origin: ["https://user-auth-mu-two.vercel.app"],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
 }));
